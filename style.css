@@ -1,42 +1,51 @@
-/* Reset and base */
+/* ========================
+   Reset and Base Styles
+   ======================== */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Ensures padding/margin don't affect width/height */
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-  background-color: #f7f7f7;
-  color: #333;
+  font-family: 'Poppins', sans-serif; /* Clean modern font */
+  line-height: 1.6; /* Improves readability */
+  background-color: #f7f7f7; /* Light gray background */
+  color: #333; /* Dark gray text */
 }
 
-/* Container */
+/* ========================
+   Container
+   ======================== */
 .container {
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem 0;
+  width: 90%; /* Fluid width for responsiveness */
+  max-width: 1000px; /* Max width for large screens */
+  margin: 0 auto; /* Center horizontally */
+  padding: 2rem 0; /* Vertical padding */
 }
 
-/* Header */
+/* ========================
+   Header Styles
+   ======================== */
 header {
-  background-color: #4a4cf2;
-  color: #fff;
-  padding: 1.5rem 0;
+  background-color: #4a4cf2; /* Blue background */
+  color: #fff; /* White text */
+  padding: 1.5rem 0; /* Vertical padding */
   text-align: center;
 }
 
 header h1 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem; /* Space below title */
 }
 
+/* ========================
+   Navigation Styles
+   ======================== */
 nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Horizontal list */
+  justify-content: center; /* Center items */
+  gap: 1.5rem; /* Spacing between links */
 }
 
 nav a {
@@ -46,27 +55,33 @@ nav a {
 }
 
 nav a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Add underline on hover */
 }
 
-/* Sections */
+/* ========================
+   General Section Styling
+   ======================== */
 section {
-  margin: 3rem 0;
+  margin: 3rem 0; /* Space between sections */
 }
 
 h2 {
-  color: #4a4cf2;
+  color: #4a4cf2; /* Blue section titles */
   margin-bottom: 1rem;
 }
 
-/* About Section */
+/* ========================
+   About Section
+   ======================== */
 .profile-pic {
   width: 150px;
-  border-radius: 50%;
+  border-radius: 50%; /* Makes image circular */
   margin-bottom: 1rem;
 }
 
-/* Button */
+/* ========================
+   Button Styling
+   ======================== */
 .btn {
   display: inline-block;
   background-color: #4a4cf2;
@@ -79,10 +94,12 @@ h2 {
 }
 
 .btn:hover {
-  background-color: #3a3cd9;
+  background-color: #3a3cd9; /* Darker blue on hover */
 }
 
-/* Contact Section */
+/* ========================
+   Contact Section
+   ======================== */
 #contact a {
   text-decoration: none;
   color: #333;
@@ -101,7 +118,9 @@ h2 {
   font-size: 1.2rem;
 }
 
-/* Footer */
+/* ========================
+   Footer
+   ======================== */
 footer {
   background-color: #333;
   color: #fff;
@@ -109,18 +128,22 @@ footer {
   padding: 1rem 0;
   margin-top: 2rem;
 }
+
+/* ========================
+   Project Grid and Cards
+   ======================== */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
+  gap: 1.5rem; /* Space between cards */
 }
 
 .project-card {
   background-color: #fff;
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+  transition: transform 0.2s; /* Smooth hover animation */
 }
 
 .project-card h3 {
@@ -139,18 +162,21 @@ footer {
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* Lift card on hover */
 }
-/* Responsive Styles */
+
+/* ========================
+   Responsive Styles (Mobile)
+   ======================== */
 @media (max-width: 768px) {
   header .container,
   section .container,
   footer .container {
-    padding: 0 1rem;
+    padding: 0 1rem; /* Narrower padding on small screens */
   }
 
   nav ul {
-    flex-direction: column;
+    flex-direction: column; /* Stack nav links vertically */
     gap: 0.5rem;
     text-align: center;
   }
@@ -163,7 +189,7 @@ footer {
   }
 
   .project-grid {
-    grid-template-columns: 1fr; /* Stack projects in one column */
+    grid-template-columns: 1fr; /* One column for mobile */
   }
 
   h1 {
@@ -187,7 +213,10 @@ footer {
     font-size: 0.9rem;
   }
 }
-/* Hamburger menu styles */
+
+/* ========================
+   Hamburger Menu (Mobile)
+   ======================== */
 .hamburger {
   display: none;
   font-size: 1.8rem;
@@ -213,7 +242,7 @@ footer {
   }
 
   #nav-links.active {
-    display: flex;
+    display: flex; /* Show menu when active */
   }
 
   nav ul li {
