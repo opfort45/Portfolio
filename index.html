@@ -21,16 +21,15 @@
 
   <!-- Header Section -->
   <header>
-    <div class="container">
-      <h1>Lakshya Kanaujia</h1>
-
-      <!-- Navigation Bar -->
-      <nav id="navbar">
-        <ul id="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+  <div class="container">
+    <h1>Lakshya Kanaujia</h1>
+    
+    <nav id="navbar">
+      <ul id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
         <!-- Hamburger icon for mobile nav -->
         <div class="hamburger" id="hamburger">
@@ -61,21 +60,18 @@
     <div class="container">
       <h2>Projects</h2>
 
-      <!-- Project Grid Layout -->
-      <div class="project-grid">
-        <!-- Project Card 1 -->
-        <div class="project-card">
-          <h3>Responsive Portfolio</h3>
-          <p>A personal portfolio website made using HTML, CSS, and Font Awesome.</p>
-          <a href="https://github.com/opfort45/portfolio" target="_blank">View on GitHub</a>
-        </div>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Responsive Portfolio</h3>
+        <p>A personal portfolio website made using HTML, CSS, and Font Awesome.</p>
+        <a href="https://github.com/opfort45/portfolio" target="_blank">View on GitHub</a>
+      </div>
 
-        <!-- Project Card 2 -->
-        <div class="project-card">
-          <h3>AI Medicine Helper</h3>
-          <p>A Streamlit-based web app to help users get medicine info from symptoms using AI.</p>
-          <a href="https://github.com/opfort45/AI_Medicine_Helper" target="_blank">View on GitHub</a>
-        </div>
+      <div class="project-card">
+        <h3>AI Medicine Helper</h3>
+        <p>A Streamlit-based web app to help users get medicine info from symptoms using AI.</p>
+        <a href="https://github.com/opfort45/AI_Medicine_Helper" target="_blank">View on GitHub</a>
+      </div>
 
         <!-- Project Card 3: NEW PROJECT -->
         <div class="project-card">
@@ -115,8 +111,8 @@
         </a>
       </p>
 
-    </div>
-  </section>
+  </div>
+</section>
 
   <!-- Footer Section -->
   <footer>
@@ -130,11 +126,9 @@
     const hamburger = document.getElementById("hamburger");
     const navLinks = document.getElementById("nav-links");
 
-    // Toggle 'active' class to show/hide nav links on mobile
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  </script>
-
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
 </body>
 </html>
